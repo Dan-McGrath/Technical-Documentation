@@ -47,3 +47,115 @@ input{
     border-radius: 0;
 }
 // END RESET
+
+
+// Variables
+
+//Typography
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300&family=Montserrat+Alternates:wght@200;300;400;500&family=Mukta:wght@200;300;400;500&display=swap');
+
+$ff-header: ('Heebo', sans-serif);
+$ff-text: ('Montserrat Alternates', sans-serif);
+$ff-title: ('Mukta', sans-serif);
+
+$fw-header-light: 100;
+$fw-header-normal: 200;
+$fw-header-bold: 300;
+
+$fw-text-light: 200;
+$fw-text-nomral: 300;
+$fw-text-semibold: 400;
+$fw-text-bold: 500;
+
+$fs-200: 0.925rem;
+$fs-300: 1rem;
+$fs-400: 1.2rem;
+$fs-500: 1.5rem;
+$fs-600: 2rem;
+$fs-700: 2.5rem;
+
+// Colors
+
+/* Color Theme Swatches in HSLA */
+$color-bg-dark: hsla(225, 12, 4, 1);
+$color-bg: hsla(208, 31, 19, 1);
+$color-text-dark: hsla(202, 30, 42, 1);
+$color-text-normal: hsla(202, 37, 60, 1);
+$color-text-light: hsla(196, 48, 70, 1);
+
+
+// END VARIABLES
+
+
+
+
+// Base
+body {
+    background-color: $color-bg;
+}
+
+p,
+a  {
+    font-family: $ff-text;
+    font-size: $fs-400;
+}
+
+.main-section {
+    background-color: $color-bg-dark;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    color: $color-text-normal;
+
+
+    h2 {
+        text-align: center;
+        font-family: $ff-title;
+        font-weight: $fw-text-light;
+        font-size: $fs-600;
+        padding: 1rem;
+    }
+}
+
+// END BASE
+
+
+
+
+// Nav/Header
+
+.header {
+    text-align: center;
+    font-weight: $fw-header-bold;
+    font-family: $ff-header;
+    font-size: $fs-500;
+    padding: 2rem 0;
+    color: $color-text-light;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 150px;
+    border: 1px solid black;
+    overflow: scroll;
+
+    a {
+        border: 1px solid black;
+        padding: 0.5rem;
+        color: rgba(0, 0, 0, 0.70);
+        color: $color-text-normal;
+        text-decoration: none;
+    }
+}
+
+// END NAV/HEADER
+
+
+
+
+// Introduction
+
+
+// END INTRODUCTION
