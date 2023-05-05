@@ -110,12 +110,32 @@ a  {
 
     h2 {
         text-align: center;
-        font-family: $ff-title;
-        font-weight: $fw-text-light;
+        font-family: $ff-header;
+        font-weight: $fw-header-bold;
         font-size: $fs-600;
-        padding: 1rem;
+        padding-top: 2rem;
+    }
+
+    article {
+        padding: 1rem 1rem 2rem;;
+
+        h3 {
+            font-family: $ff-title;
+            font-size: $fs-500;
+            font-weight: $fw-header-bold;
+            text-align: center;
+            color: $color-text-dark;
+        }
+
+        p {
+            font-weight: $fw-text-bold;
+            font-size: $fs-300;
+            line-height: 1.2;
+        }
     }
 }
+
+
 
 // END BASE
 
