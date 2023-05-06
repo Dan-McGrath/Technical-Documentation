@@ -163,6 +163,8 @@ code {
 }
 
 
+
+
 // END BASE
 
 
@@ -205,3 +207,35 @@ code {
 
 
 // END INTRODUCTION
+
+// Hello World
+
+
+// Data Types
+
+.datatypes-list {
+    display: block;
+    background-color: $color-bg;
+    opacity: 0.8;
+    font-size: $fs-200;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+
+    li {
+        display: block;
+        color: $color-text-light;
+
+        code {
+            background-color: $color-bg-dark;
+            color: $color-text-light;
+        }
+
+        span {
+            font-weight: $fw-text-bold;
+            color: white;
+            font-size: $fs-500;
+        }
+    }
+}
+
+// END HELLO WORLD
