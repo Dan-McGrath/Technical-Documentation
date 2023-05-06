@@ -56,6 +56,7 @@ body {
 code {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
+  overflow: scroll;
 }
 
 p,
@@ -81,6 +82,9 @@ h2 {
 
 article {
   padding: 0 1rem 2rem;
+}
+article p {
+  padding: 1rem 0;
 }
 
 h3 {
@@ -158,6 +162,7 @@ code {
 }
 .datatypes-list li span {
   font-weight: 500;
-  color: white;
+  color: hsl(0, 0%, 91%);
   font-size: 1.5rem;
+  padding-right: 0.2rem;
 }/*# sourceMappingURL=styles.css.map */

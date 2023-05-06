@@ -86,6 +86,7 @@ $color-text-dark: hsla(202, 30, 42, 1);
 $color-text-normal: hsla(202, 37, 60, 1);
 $color-text-light: hsla(196, 48, 70, 1);
 $color-text-link: hsl(246, 100%, 80%);
+$color-text-white: hsl(0, 0%, 91%);
 
 // END VARIABLES
 
@@ -100,6 +101,8 @@ body {
 code {
     font-family: $ff-code;
     font-weight: $fw-code;
+    overflow: scroll;
+
 }
 
 p,
@@ -125,6 +128,10 @@ h2 {
 
 article {
         padding: 0 1rem 2rem;
+
+        p {
+            padding: 1rem 0;
+        }
 }
 
 h3 {
@@ -225,6 +232,7 @@ code {
         display: block;
         color: $color-text-light;
 
+
         code {
             background-color: $color-bg-dark;
             color: $color-text-light;
@@ -232,8 +240,9 @@ code {
 
         span {
             font-weight: $fw-text-bold;
-            color: white;
+            color: $color-text-white;
             font-size: $fs-500;
+            padding-right: 0.2rem;
         }
     }
 }
