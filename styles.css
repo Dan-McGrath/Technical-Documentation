@@ -61,7 +61,6 @@ code {
 p,
 a {
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 1.2rem;
 }
 
 .main-section {
@@ -71,38 +70,49 @@ a {
   border-radius: 10px;
   color: hsl(202, 37%, 60%);
 }
-.main-section h2 {
+
+h2 {
   text-align: center;
   font-family: "Heebo", sans-serif;
   font-weight: 300;
   font-size: 2rem;
   padding-top: 2rem;
 }
-.main-section article {
+
+article {
   padding: 0 1rem 2rem;
 }
-.main-section article h3 {
+
+h3 {
   font-family: "Mukta", sans-serif;
   font-size: 1.5rem;
   font-weight: 300;
   color: hsl(202, 30%, 42%);
   padding: 1rem 0;
 }
-.main-section article p {
+
+p {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
 }
-.main-section article p a {
-  color: hsl(196, 48%, 70%);
+
+a {
+  color: hsl(246, 100%, 80%);
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: 500;
 }
-.main-section article p code {
+
+code {
   background-color: hsl(208, 31%, 19%);
   color: hsl(202, 30%, 42%);
-  padding: 0 0.1rem 0.1rem;
+}
+
+.example {
+  display: block;
+  padding: 0.5rem 0;
+  line-height: 2;
 }
 
 .header {
@@ -119,7 +129,7 @@ a {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   height: 150px;
-  border: 1px solid black;
+  border: 1px solid hsl(225, 12%, 4%);
   overflow: scroll;
 }
 .links a {
