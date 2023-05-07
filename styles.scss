@@ -76,6 +76,8 @@ $fs-400: 1.2rem;
 $fs-500: 1.5rem;
 $fs-600: 2rem;
 $fs-700: 2.5rem;
+$fs-800: 3rem;
+$fs-900: 3.5rem;
 
 // Colors
 
@@ -215,7 +217,7 @@ a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    height: 150px;
+    height: 200px;
     border: 1px solid $color-bg-dark;
     overflow: scroll;
 
@@ -236,16 +238,22 @@ a {
         float: left;
         height: 100vh;
         width: 20%;
-        border-right: 2px solid rgba(0, 0, 0, 0.50)
+        border-right: 2px solid rgba(0, 0, 0, 0.50);
+        
+        .header {
+            font-size: $fs-700;
+        }
     }
     
+
     .links {
         height: auto;
         border: none;
         overflow: auto;
+        
         a{
-            font-size: $fs-600;
-            padding: 1rem;;
+            font-size: $fs-500;
+            padding: 0.65rem;
             border: none;
             border-bottom: 1px solid black;
         }
@@ -308,7 +316,7 @@ a {
 // text size media queries
 @media screen and (min-width: 700px) {
     .header {
-        font-size: $fs-700;
+        font-size: $fs-800;
     }
 
     h2 {
