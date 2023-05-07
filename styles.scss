@@ -242,7 +242,10 @@ a {
     .links {
         height: auto;
         border: none;
+        overflow: auto;
         a{
+            font-size: $fs-600;
+            padding: 1rem;;
             border: none;
             border-bottom: 1px solid black;
         }

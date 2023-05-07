@@ -174,8 +174,11 @@ a {
   .links {
     height: auto;
     border: none;
+    overflow: auto;
   }
   .links a {
+    font-size: 2rem;
+    padding: 1rem;
     border: none;
     border-bottom: 1px solid black;
   }
