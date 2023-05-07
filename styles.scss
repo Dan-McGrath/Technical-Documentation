@@ -101,8 +101,18 @@ body {
 code {
     font-family: $ff-code;
     font-weight: $fw-code;
-    overflow: scroll;
+    background-color: $color-bg;
+    color: $color-text-dark;
+}
 
+.scroll {
+    overflow: scroll;
+}
+
+@media screen and (min-width: 400px) {
+    .scroll {
+        overflow: auto;
+    }
 }
 
 p,
@@ -112,10 +122,28 @@ a  {
 
 .main-section {
     background-color: $color-bg-dark;
-    width: 80%;
-    margin: 2rem auto;
+    margin: 1rem auto;
     border-radius: 10px;
     color: $color-text-normal;
+}
+
+@media screen and (min-width: 425px) {
+    .main-section {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .main-section {
+        margin: 1rem auto;
+    
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .main-section {
+        padding: 2rem;
+    }
 }
 
 h2 {
@@ -157,16 +185,11 @@ a {
 
 }
 
-code {
-    background-color: $color-bg;
-    color: $color-text-dark;
-                
-}
-
 .example {
     display: block;
     padding: 0.5rem 0;
     line-height: 2;
+    margin: 1rem 0;
 }
 
 
@@ -183,7 +206,7 @@ code {
     text-align: center;
     font-weight: $fw-header-bold;
     font-family: $ff-header;
-    font-size: $fs-500;
+    font-size: $fs-600;
     padding: 2rem 0;
     color: $color-text-light;
 }
@@ -199,9 +222,39 @@ code {
     a {
         border: 1px solid black;
         padding: 0.5rem;
-        color: rgba(0, 0, 0, 0.70);
         color: $color-text-normal;
         text-decoration: none;
+    }
+}
+
+
+// Move Nav to left side of page
+@media screen and (min-width: 1400px) {
+    
+    nav {
+        position: fixed;
+        float: left;
+        height: 100vh;
+        width: 20%;
+        border-right: 2px solid rgba(0, 0, 0, 0.50)
+    }
+    
+    .links {
+        height: auto;
+        border: none;
+        a{
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        
+    }
+
+    main {
+        position: relative;
+        width: 80%;
+        left: 20%;
+        
+
     }
 }
 
@@ -248,3 +301,26 @@ code {
 }
 
 // END HELLO WORLD
+
+// text size media queries
+@media screen and (min-width: 700px) {
+    .header {
+        font-size: $fs-700;
+    }
+
+    h2 {
+        font-size: $fs-700;
+    }
+
+    h3 {
+        font-size: $fs-600;
+    }
+
+    a {
+        font-size: $fs-500;
+    }
+
+    p {
+        font-size: $fs-400;
+    }
+}
